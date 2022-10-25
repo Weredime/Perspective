@@ -1,0 +1,10 @@
+{
+  "key.perspective.toggle": "Hold/toggle freelook",
+  "category.perspective.keybinds": "Perspective",
+  "text.autoconfig.perspective.title": "Perspective Settings",
+  "text.autoconfig.perspective.option.freelookEnabled": "Enable Perspective",
+  "text.autoconfig.perspective.option.initialPerspective": "Initial perspective",
+  "text.autoconfig.perspective.option.initialPerspective.FIRST_PERSON": "First person",
+  "text.autoconfig.perspective.option.initialPerspective.SECOND_PERSON": "Third person (front)",
+  "text.autoconfig.perspective.option.initialPerspective.THIRD_PERSON": "Third person (back)"
+}

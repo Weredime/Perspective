@@ -1,38 +1,45 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "perspective",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Perspective",
+  "description": "Freelook/Perspective implemented in Lunar Client/Badlion Client, now available on Fabric!",
   "authors": [
-    "Me!"
+    "Weredime"
+  ],
+  "credits": [
+    "Celibistrial - original code"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Weredime/Perspective/issues",
+    "sources": "https://github.com/Weredime/Perspective"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "GPL-3.0",
+  "icon": "assets/perspective/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
+    "client": [
+      "io.github.weredime.mods.perspective.PerspectiveMod"
+    ],
+    "modmenu": [
+      "io.github.weredime.mods.perspective.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "perspective.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
     "minecraft": "~1.19",
-    "java": ">=17"
+    "java": ">=17",
+    "fabric-key-binding-api-v1": "*"
   },
-  "suggests": {
-    "another-mod": "*"
+  "conflicts": {
+    "freelook": "*"
   }
 }
